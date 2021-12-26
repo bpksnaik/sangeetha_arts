@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sangeetha Arts</title>
+    <link rel="shortcut icon" href="symbol.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="cont.css" media="screen"/>
+   <!---- <link rel="stylesheet" type="text/css" href="lak.css" media="screen"/>-->
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   
+</head>
+<body>
+    <header >
+
+        <img src="Sangeetha Arts.png" class="logo" width="500" height="100">
+    <div class="main">
+    <ul>
+        <li class="active"><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
+        <li><a href="#aboutours"><i class="fa fa-user" aria-hidden="true"></i>About Us</a></li>
+        <li><a href="clients.html"><i class="fa fa-users" aria-hidden="true"></i>Clients</a></li>
+        <li>
+            <div class="dropdown">
+                <a href=contact.html class="dropbtn"><i class="fa fa-phone" aria-hidden="true"></i>Contact Us</a>
+               <!---- <div class="dropdown-content">
+                  <a href="mailto:nslakshman98@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i>Mail</a>
+                  <a href="tel:8197557809"><i class="fa fa-phone" aria-hidden="true"></i>Call</a>
+                  <a href="#">Link 3</a>
+                </div>-->
+              </div>
+        </li>
+    </ul>
+    </div>
+
+        </header>
+
+
+
+
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="sliding_image1.jpeg" style="width:100%">
+  <div class="text slide-up" id="text1" > <h2>Welcome to <br>
+       Sangeetha Arts</h2>
+    <h3 class="tagline"> Designs | Prints | Signage </h3>
+    <div class="ppp">
+    <h4 > <a href="mailto:nslakshman98@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i> nslakshman98@gmail.com</a>
+       
+    </div>
+   
+   <div class="lll">
+    <h4><a href="tel:8197557809"><i class="fa fa-phone" aria-hidden="true"></i> 8197557809</a></h4></div>
+</div>
+</div>
+<!--<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="sliding_image2.jpeg" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>-->
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="sliding_image2.jpeg" style="width:100%">
+  <div class="text"></div>
+</div>
+
+<!--<div class="mySlides fade">
+    <div class="numbertext">4 / 4</div>
+    <img src="sliding_image4.jpeg" style="width:100%">
+    <div class="text">Caption Three</div>
+  </div>-->
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <!--<span class="dot" onclick="currentSlide(3)"></span> -->
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+ 
+}
+
+$(document).ready(function(){
+  //$("#text1").slideUp();
+});
+
+</script>
+
+
+
+<!--About us-->
+<div class="ourwork" id="aboutours">
+  <h3 class="tag" > About Us</h3>
+<div class=" aboutflip">
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="visiting_card.jpeg" alt="Avatar" style="width:300px;height:300px;">
+      </div>
+      <div class="flip-card-back">
+        <h1>Visiting Card</h1> 
+        
+        <p>Because Business Card is not just any card, it is your first impression, business philosophy and a brief account of the wonders that you can do! In short, it represents you!</p> 
+        
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="brochure.jpeg" alt="Avatar" style="width:300px;height:300px;">
+      </div>
+      <div class="flip-card-back">
+        <h1>Brochure</h1> 
+        <p> All my designs are designed specifically to client's needs and expectations. </p>
+        All my projects begin with an overview of what YOU specifically need and envision, 
+        along with a project timeline and overall guidelines to make your business success and increase your sales.</p> 
+        
+      </div>
+    </div>
+  </div>
+
+
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="idcard.jpeg" alt="Avatar" style="width:300px;height:300px;">
+      </div>
+      <div class="flip-card-back">
+        <h1>ID Card</h1> 
+        <p>Our PVC cards will fit all your need like ID cards, Member cards and verity of lanyards...</p> 
+        
+      </div>
+    </div>
+  </div>
+
+
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="signboard.jpeg" alt="Avatar" style="width:300px;height:300px;">
+      </div>
+      <div class="flip-card-back">
+        <h1>Sign Board</h1> 
+        <p>Sangeetha Arts has established itself as the market leader in Signage creation.</p>
+        <p>  We have a wide variety of Signage for our esteemed clients to choose from. </p> 
+     <p>We have an expert professional team to help you with start from the designing to the final installation of your signage</p>
+        
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<section class="ourclients">
+  <h3> Our Clients</h3>
+<div class=" clientflip">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="playschool.jpeg" alt="Avatar" style="width:300px;height:300px;">
+          </div>
+          <div class="flip-card-back">
+            <h1>Play School</h1> 
+            <p>Books | Forms | Progress Card | Visiting Card</p> 
+            
+          </div>
+        </div>
+      </div>
+
+    
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="tandor.png" alt="Avatar" style="width:300px;height:300px;">
+          </div>
+          <div class="flip-card-back">
+            <h1>New Tandoor</h1> 
+            <p>Sign Board | Menu Card </p> 
+            
+          </div>
+        </div>
+      </div>
+
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="dental.png" alt="Avatar" style="width:300px;height:300px;">
+          </div>
+          <div class="flip-card-back">
+            <h1>Gloss Dental Care</h1> 
+            <p>Sign Board | Prescription Pad | Visiting Cards</p> 
+            
+          </div>
+        </div>
+      </div>
+
+    
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="kaka.jpeg" alt="Avatar" style="width:300px;height:300px;">
+          </div>
+          <div class="flip-card-back">
+            <h1>Kaka Singh Restaurant</h1> 
+            <p>Sign Board | Menu Card</p> 
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  
+
+
+
+
+
+
+
+<section class="contact1">
+  <div class="content1">
+      <h1>Contact Us</h1>
+    <!----  <p><h2>Welcome to Sangeetha Arts</h2></p>-->
+  </div>
+  <div class="container1">
+      <div class="contactForm">
+          <form action="mail-to:nslakshman98@gmail.com" method="POST" enctype="text/plain">
+              <h2>Send Message</h2>
+              <div class="inputBox">
+                  <input type="text" id="nameinfo" name="" required="required">
+                  <span>Full Name</span>
+              </div>
+              <div class="inputBox">
+                  <input type="text" id="emailinfo" name="" required="required">
+                  <span>Email</span>
+              </div>
+              <div class="inputBox">
+                  <input type="text" id="phoneinfo" name="" required="required">
+                  <span>Phone Number</span>
+              </div>
+              <div class="inputBox">
+                  <textarea id="textareainfo" required="required"></textarea>
+                  <span>Type  your message...</span>
+              </div>
+              <div class="inputBox">
+                   <input type="button" onclick="sendEmail()" name="" value="Send">
+              </div>
+              
+          </form>
+      </div>
+  </div>
+
+
+</section>
+<script src="https://smtpjs.com/v3/smtp.js"> </script>
+<script>
+  function sendEmail(){
+      var nameInfo = document.getElementById("nameinfo").value;
+      var emailInfo = document.getElementById("emailinfo").value;
+      var phoneInfo = document.getElementById("phoneinfo").value;
+      var textareaInfo = document.getElementById("textareainfo").value;
+      console.log(nameInfo,emailInfo,phoneInfo,textareaInfo);
+      
+      Email.send({
+  Host : "smtp.gmail.com",
+  Username : "bprs16ec@cmrit.ac.in",
+  Password : "Pksnaik24",
+  To : '@gmail.com',
+  From : "bprs16ec@cmrit.ac.in",
+  Subject : "Sangeetha Arts Order",
+  Body : `<h2>  Name :${nameInfo}  EmailInfo  : ${emailInfo} Phone Number :${phoneInfo} Discription:${textareaInfo} </h2>`
+}).then(
+message => alert(message)
+);
+  }
+
+ 
+</script>
+
+<!-- Last address -->
+<div class="row1">
+  <div class="column">
+  <a  href="https://goo.gl/maps/2i3dQGZrD6wMyQWNA">
+   <img src="mylocation.png" class="responsive" width="800" height="400"></a>
+    
+  </div>
+  <div class="column1" >
+    <div class="box1">
+      <div class="icon1"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+      <div class="text1">
+         <!---- <h3>Address</h3> -->
+          <p>#350 Chamudeshwari Nilaya Near andhra Bank,<br>
+              4th cross kaggadasapura Bengaluru-560093</p>
+      </div>
+   </div>
+
+   <div class="box1">
+    <div class="icon1"><a href#><i class="fa fa-phone" aria-hidden="true"></i></a></div>
+    <div class="text1">
+       <!---- <h3>Phone</h3>-->
+        <p>8197757809</p>
+    </div>
+ </div>
+
+ <div class="box1">
+    <div class="icon1"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+    <div class="text1">
+      <!----  <h3>Email</h3>-->
+        <p>nslakshman98@gmail.com</p>
+    </div>
+ </div>
+  </div>
+</div>
+
+<!--footer-->
+<div class="footer">
+  <p>Copyright &#169; 2021 Sangeetha Arts . All rights reserved | Designed by : Pk solutions</p>
+ 
+</div>
+
+        
+</body>
+</html>
